@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Hero Section -->
+  <section id="hero" class="hero" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+    <div class="hero-content">
+      <h1>Your Name</h1>
+      <p>Information Technology Technician & Power Apps Developer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Mike's Portfolio</h1>
-            <p>IT Support | Power Apps Developer | Web Developer</p>
-            <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More</button>
-        </div>
-    </section>
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Your Name">
+      <p>I am an IT Technician with over 3 years of experience in troubleshooting, networking, and software management. I specialize in Power Apps development and automation, ensuring seamless user experiences and system functionality.</p>
+      <div class="skills">
+        <div class="skill"><i class="fas fa-tools"></i> Troubleshooting</div>
+        <div class="skill"><i class="fas fa-network-wired"></i> Networking</div>
+        <div class="skill"><i class="fas fa-code"></i> Power Apps</div>
+        <div class="skill"><i class="fas fa-desktop"></i> Hardware/Software</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Skills & Expertise -->
+  <section id="skills" class="skills">
+    <h2>Skills & Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Technical Support</h3>
+        <p>Hardware/Software troubleshooting, user support, and system maintenance.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>Power Apps Development</h3>
+        <p>Designing and automating workflows using Power Apps and Power Automate.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Networking</h3>
+        <p>LAN/WAN setup, VPN configuration, and network security.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-tools"></i>
+        <h3>Web Design</h3>
+        <p>Creating responsive and user-friendly websites.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an Information Technology Technician with over three years of hands-on experience...</p>
-    </section>
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Description of the project and technologies used.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Description of the project and technologies used.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <i class="fas fa-desktop"></i>
-                <h3>IT Support</h3>
-                <p>Providing top-notch IT support and troubleshooting.</p>
-            </div>
-            <div class="project-card">
-                <i class="fas fa-tools"></i>
-                <h3>Power Apps</h3>
-                <p>Building Power Apps solutions for business automation.</p>
-            </div>
-            <div class="project-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Web Development</h3>
-                <p>Creating modern and interactive web applications.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Me -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <span>IT Support</span>
-            <span>Power Apps</span>
-            <span>Networking</span>
-            <span>Web Development</span>
-            <span>Automation</span>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
