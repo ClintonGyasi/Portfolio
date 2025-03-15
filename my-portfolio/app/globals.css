@@ -44,7 +44,7 @@ button {
 /* Custom Navbar Styles */
 .navbar {
   position: absolute;
-  top: 4px;
+  top: 20px; /* Adjusted from 4px to 20px to bring the navbar downwards */
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
