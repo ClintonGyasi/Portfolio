@@ -47,10 +47,14 @@ export default function About() {
         {/* Skills Section */}
         <h2 className="text-3xl sm:text-4xl font-bold mt-12 animate-fade-in">Skills</h2>
         <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in border-2 border-blue-200">
-          <ul className="text-lg sm:text-xl max-w-2xl list-disc list-inside space-y-2">
+          <ul className="text-lg sm:text-xl max-w-2xl list-none space-y-2">
             <li>Web Development (HTML, CSS, JavaScript, React, Next.js)</li>
-            <li>IT Support</li>
             <li>Power Apps Development</li>
+            <li>IT Support</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>WordPress</li>
+            <li>C++</li>
             <li>Responsive Design</li>
             <li>Version Control (Git, GitHub)</li>
             <li>Problem Solving</li>
