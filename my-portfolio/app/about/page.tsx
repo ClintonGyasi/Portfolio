@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center text-black bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080/?technology,abstract')" }}>
       {/* Overlay for better readability */}
@@ -19,7 +19,7 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <div className="relative flex flex-col items-center text-center px-6 mt-24 space-y-6 z-10">
+      <div className="relative flex flex-col items-center text-center px-6 mt-24 space-y-6 z-10 pb-24">
         {/* Profile Image */}
         <Image 
           src="/profile.jpg" 
@@ -29,16 +29,16 @@ export default function Home() {
           className="rounded-full border-4 border-gray-400 shadow-lg"
         />
 
-        {/* Name & Title */}
-        <h1 className="text-4xl sm:text-5xl font-bold">Clinton Gyasi Bannor</h1>
-        <p className="text-lg sm:text-xl">IT Support | Web Developer | Power Apps Developer</p>
-
-        {/* Call-to-Action Button */}
-        <Link href="/projects">
-          <button className="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow-md hover:bg-blue-700 transition">
-            View My Work
-          </button>
-        </Link>
+        <h1 className="text-4xl sm:text-5xl font-bold">About Me</h1>
+        <p className="text-lg sm:text-xl max-w-2xl">
+          Welcome to my portfolio! I'm Clinton Gyasi Bannor, a passionate web developer and IT support specialist. With a strong background in creating dynamic and responsive web applications, I strive to deliver the best user experience. I am also skilled in Power Apps development, helping businesses automate their processes and improve efficiency.
+        </p>
+        <p className="text-lg sm:text-xl max-w-2xl">
+          I have a keen interest in the latest technologies and continuously seek to improve my skills. When I'm not coding, I enjoy exploring new tech trends, contributing to open-source projects, and connecting with like-minded professionals.
+        </p>
+        <p className="text-lg sm:text-xl max-w-2xl">
+          Feel free to explore my projects and get in touch if you'd like to collaborate or learn more about my work.
+        </p>
       </div>
 
       {/* Footer with Social Media Links */}
