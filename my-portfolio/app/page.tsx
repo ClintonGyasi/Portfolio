@@ -9,10 +9,9 @@ export default function Home() {
       <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-gray-100/80 backdrop-blur-lg"></div>
 
       {/* Glassy Navbar */}
-      <nav className="absolute top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-4xl flex justify-between items-center 
-      p-4 rounded-xl bg-white/30 backdrop-blur-md shadow-2xl border-2 border-white/50 z-10">
-        <h2 className="text-xl font-semibold">My Portfolio</h2>
-        <div className="flex gap-6">
+      <nav className="navbar">
+        <h2 className="navbar-brand">My Portfolio</h2>
+        <div className="navbar-links">
           <Link href="/about" className="hover:text-blue-400">About</Link>
           <Link href="/projects" className="hover:text-blue-400">Projects</Link>
           <Link href="/contact" className="hover:text-blue-400">Contact</Link>
