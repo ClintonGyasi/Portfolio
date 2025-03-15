@@ -28,11 +28,11 @@ export default function About() {
           alt="Clinton Gyasi Bannor" 
           width={150} 
           height={150} 
-          className="rounded-full border-4 border-gray-400 shadow-lg animate-bounce"
+          className="rounded-full border-4 border-gray-400 shadow-lg"
         />
 
         <h1 className="text-4xl sm:text-5xl font-bold animate-fade-in">About Me</h1>
-        <div className="bg-white/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in">
+        <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in border-2 border-blue-200">
           <p className="text-lg sm:text-xl max-w-2xl">
             Welcome to my portfolio! I'm Clinton Gyasi Bannor, a passionate web developer and IT support specialist. With a strong background in creating dynamic and responsive web applications, I strive to deliver the best user experience. I am also skilled in Power Apps development, helping businesses automate their processes and improve efficiency.
           </p>
@@ -46,8 +46,8 @@ export default function About() {
 
         {/* Skills Section */}
         <h2 className="text-3xl sm:text-4xl font-bold mt-12 animate-fade-in">Skills</h2>
-        <div className="bg-white/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in">
-          <ul className="text-lg sm:text-xl max-w-2xl list-disc list-inside">
+        <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in border-2 border-blue-200">
+          <ul className="text-lg sm:text-xl max-w-2xl list-disc list-inside space-y-2">
             <li>Web Development (HTML, CSS, JavaScript, React, Next.js)</li>
             <li>IT Support</li>
             <li>Power Apps Development</li>

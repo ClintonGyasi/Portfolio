@@ -26,7 +26,7 @@ export default function Home() {
           alt="Clinton Gyasi Bannor" 
           width={150} 
           height={150} 
-          className="rounded-full border-4 border-gray-400 shadow-lg"
+          className="rounded-full border-4 border-gray-400 shadow-lg animate-bounce"
         />
 
         {/* Name & Title */}
