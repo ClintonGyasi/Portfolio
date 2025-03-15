@@ -1,74 +1,61 @@
 import Link from "next/link";
+import Image from "next/image";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
-      {/* Navbar */}
-      <nav className="w-full px-8 py-4 flex justify-between items-center bg-white dark:bg-gray-800 shadow-md fixed top-0 z-50">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Mike's Portfolio</h1>
-        <div className="flex gap-6 text-lg">
-          <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">About</Link>
-          <Link href="/projects" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">Projects</Link>
-          <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">Contact</Link>
+    <div className="relative min-h-screen flex flex-col items-center justify-center text-black bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080/?technology,abstract')" }}>
+      {/* Overlay for better readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-gray-100/80 backdrop-blur-lg"></div>
+
+      {/* Glassy Navbar */}
+      <nav className="absolute top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-4xl flex flex-col sm:flex-row justify-between items-center 
+      p-4 rounded-xl bg-white/30 backdrop-blur-md shadow-2xl border-2 border-white/50 z-10">
+        <h2 className="text-xl font-semibold">My Portfolio</h2>
+        <div className="flex gap-6 mt-2 sm:mt-0">
+          <Link href="/about" className="hover:text-blue-400">About</Link>
+          <Link href="/projects" className="hover:text-blue-400">Projects</Link>
+          <Link href="/contact" className="hover:text-blue-400">Contact</Link>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <header className="flex flex-col-reverse md:flex-row items-center justify-center text-center md:text-left min-h-screen px-6 md:px-16 gap-10">
-        {/* Left Side - Text */}
-        <div className="max-w-2xl">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white">
-            Hi, I'm Mike 👋
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mt-4">
-            IT Support Specialist | Web Developer | Power Apps Expert  
-            <br /> Helping businesses with **IT solutions, web apps, and automation.**
-          </p>
-          <Link href="/projects">
-            <button className="btn btn-primary mt-6">
-              View My Work
-            </button>
-          </Link>
-        </div>
+      {/* Main Content */}
+      <div className="relative flex flex-col items-center text-center px-6 mt-24 space-y-6 z-10">
+        {/* Profile Image */}
+        <Image 
+          src="/profile.jpg" 
+          alt="Clinton Gyasi Bannor" 
+          width={150} 
+          height={150} 
+          className="rounded-full border-4 border-gray-400 shadow-lg"
+        />
 
-        {/* Right Side - Image */}
-        <div>
-          <img 
-            src="/profile.jpg" 
-            alt="Mike's Profile" 
-            className="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-white shadow-lg"
-          />
-        </div>
-      </header>
+        {/* Name & Title */}
+        <h1 className="text-4xl sm:text-5xl font-bold">Clinton Gyasi Bannor</h1>
+        <p className="text-lg sm:text-xl">IT Support | Web Developer | Power Apps Developer</p>
 
-      {/* Services Section */}
-      <section className="py-24 px-6 md:px-16 text-center bg-gray-100 dark:bg-gray-800">
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12">What I Do</h3>
-        <div className="grid md:grid-cols-3 gap-12">
-          <div className="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg">
-            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white">IT Support</h4>
-            <p className="text-gray-600 dark:text-gray-300">
-              Troubleshooting, system maintenance, and enterprise IT support.
-            </p>
-          </div>
-          <div className="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg">
-            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white">Web Development</h4>
-            <p className="text-gray-600 dark:text-gray-300">
-              Building modern websites with **Next.js, React, and Tailwind CSS.**
-            </p>
-          </div>
-          <div className="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg">
-            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white">Power Apps</h4>
-            <p className="text-gray-600 dark:text-gray-300">
-              Automating business processes using **Power Apps and Power Automate.**
-            </p>
-          </div>
-        </div>
-      </section>
+        {/* Call-to-Action Button */}
+        <Link href="/projects">
+          <button className="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow-md hover:bg-blue-700 transition">
+            View My Work
+          </button>
+        </Link>
+      </div>
 
-      {/* Footer */}
-      <footer className="py-6 bg-gray-900 text-center text-white">
-        <p>&copy; {new Date().getFullYear()} Mike's Portfolio. All rights reserved.</p>
+      {/* Footer with Social Media Links */}
+      <footer className="absolute bottom-4 text-sm flex flex-col items-center gap-2 z-10">
+        <div className="flex gap-4">
+          <a href="https://www.linkedin.com/in/clintonbannor" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-2xl hover:text-blue-600" />
+          </a>
+          <a href="https://github.com/clintonbannor" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-2xl hover:text-gray-800" />
+          </a>
+          <a href="https://facebook.com/clintonbannor" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="text-2xl hover:text-blue-700" />
+          </a>
+        </div>
+        <p>&copy; {new Date().getFullYear()} Clinton Gyasi Bannor. All rights reserved.</p>
       </footer>
     </div>
   );
