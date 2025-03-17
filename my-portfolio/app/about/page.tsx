@@ -4,12 +4,12 @@ import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center text-black bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080/?technology,abstract')" }}>
+    <div className="relative min-h-screen flex flex-col items-center justify-center text-black bg-cover bg-center border-4 border-blue-200 rounded-lg" style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080/?technology,abstract')" }}>
       {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-gray-100/80 backdrop-blur-lg"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-gray-100/80 backdrop-blur-lg rounded-lg"></div>
 
       {/* Glassy Navbar */}
-      <nav className="navbar">
+      <nav className="navbar w-full border-b-4 border-blue-200 rounded-t-lg">
         <Link href="/" passHref>
           <h2 className="navbar-brand cursor-pointer">My Portfolio</h2>
         </Link>
@@ -21,7 +21,7 @@ export default function About() {
       </nav>
 
       {/* Main Content */}
-      <div className="relative flex flex-col items-center text-center px-6 mt-24 space-y-6 z-10 pb-24">
+      <div className="relative flex flex-col items-center text-center px-6 mt-24 space-y-6 z-10 pb-24 bg-white/70 backdrop-blur-md rounded-lg">
         {/* Profile Image */}
         <Image 
           src="/profile.jpg" 
@@ -32,7 +32,7 @@ export default function About() {
         />
 
         <h1 className="text-4xl sm:text-5xl font-bold animate-fade-in">About Me</h1>
-        <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in border-2 border-blue-200">
+        <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in">
           <p className="text-lg sm:text-xl max-w-2xl">
             Welcome to my portfolio! I'm Clinton Gyasi Bannor, a passionate web developer and IT support specialist. With a strong background in creating dynamic and responsive web applications, I strive to deliver the best user experience. I am also skilled in Power Apps development, helping businesses automate their processes and improve efficiency.
           </p>
@@ -46,7 +46,7 @@ export default function About() {
 
         {/* Skills Section */}
         <h2 className="text-3xl sm:text-4xl font-bold mt-12 animate-fade-in">Skills</h2>
-        <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in border-2 border-blue-200">
+        <div className="bg-blue-100/70 p-6 rounded-lg shadow-lg backdrop-blur-md animate-fade-in">
           <ul className="text-lg sm:text-xl max-w-2xl list-none space-y-2">
             <li>Web Development (HTML, CSS, JavaScript, React, Next.js)</li>
             <li>Power Apps Development</li>
@@ -64,7 +64,7 @@ export default function About() {
       </div>
 
       {/* Footer with Social Media Links */}
-      <footer className="absolute bottom-4 text-sm flex flex-col items-center gap-2 z-10">
+      <footer className="absolute bottom-4 text-sm flex flex-col items-center gap-2 z-10 w-full pt-4">
         <div className="flex gap-4">
           <a href="https://linkedin.com/in/clinton-gyasi-bannor-267375240" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-2xl hover:text-blue-600 transition-transform transform hover:scale-110" />
